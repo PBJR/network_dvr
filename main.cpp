@@ -7,7 +7,7 @@ int main(int argc, char **argv){
         return 0;
     }
     Graph* topology_graph = file_io::create_graph_from_file(argv[1]);
-    topology_graph->dvr("S");
+    topology_graph->dvr("bellman-ford");
 
     delete topology_graph;
     return 0;
